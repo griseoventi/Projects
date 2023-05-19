@@ -14,7 +14,6 @@ hdfs dfs -rm -r -skipTrash $2
     -input $1 \
     -output $2_tmp &&
 
-# Global sorting as we use only 1 reducer
 yarn jar $HADOOP_STREAMING_JAR \
     -D stream.num.map.output.key.fields=3 \
     -D mapreduce.job.name="HW_03_2" \
