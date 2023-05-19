@@ -22,10 +22,8 @@ stored as textfile
 location '/data/user_logs/user_data_M';
 
 
-
 add jar /usr/local/hive/lib/hive-serde.jar;
 drop table if exists logs_raw;
-
 create external table logs_raw
  (
  ip string,
@@ -42,9 +40,7 @@ stored as textfile
 location '/data/user_logs/user_logs_M';
 
 
-
 drop table if exists logs;
-
 create external table logs
  (
  ip string,
