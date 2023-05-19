@@ -2,7 +2,7 @@
 
 from pyspark import SparkConf, SparkContext
 
-spark_conf = (
+spark_conf = ( 
     SparkConf()
     .set("spark.ui.port", -)
     .set("spark.driver.memory", "512m")
